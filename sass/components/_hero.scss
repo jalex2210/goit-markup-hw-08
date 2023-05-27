@@ -35,3 +35,14 @@
         }
     }
 }
+
+@include screen-480{
+    .hero {
+        .hero__title {
+            width: 80%;
+            .hero__h1 {
+                font-size: 24px;
+            }
+        }
+    }
+}

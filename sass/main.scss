@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
 @import "node_modules/modern-normalize/modern-normalize.css";
 @import "./utils/variables";
+@import"./utils/mixin";
 @import "./components/logo","./components/benefits","./components/whatWeDo","./components/ourTeam";
 @import "./components/page-header","./components/navbar","./components/backdrop","./components/hero";
 @import "./components/socialNetworks","./components/RegularCustomer","./components/footer";
