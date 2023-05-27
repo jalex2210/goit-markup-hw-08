@@ -1,0 +1,37 @@
+.header{
+    display: flex;
+    padding: 24px 0;
+    justify-content: space-between;
+    align-items: center;
+    &__contact{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+        .header__link-contact {
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+            line-height: 1.142;
+            letter-spacing: 0.02em;
+            color: $color-primary-text;
+            fill: $color-primary-text;
+            .header__icon-folder {
+                width: 16px;
+                height: 12px;
+                margin-right: 10px;
+            }
+            .header__icon-phone {
+                width: 10px;
+                height: 16px;
+                margin-right: 10px;
+            }
+        }
+        .header__link-contact:focus,
+        .header__link-contact:hover {
+            color: $color-accent;
+            fill: $color-accent;
+        }
+    }
+    
+}

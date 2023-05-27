@@ -1,0 +1,93 @@
+.footer {
+    background-color: $color-background-black;
+    padding: 60px;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        
+        .footer__contact {
+            width: 231px;
+            
+            .footer__address {
+                margin-top: 9px;
+                .footer__address-link {
+                    color: $color-text-white-opacy;
+                    font-style: normal;
+                    line-height: 1.71;
+                }
+                .footer__address-link:hover,
+                .footer__address-link:focus {
+                    color: $color-primary-white;
+                }
+            }
+        }
+        .footer__titles {
+            color: $color-primary-white;
+            font-weight: 700;
+            line-height: 1.142;
+            text-transform: uppercase;
+            padding-top: 12px;
+            margin-bottom: 20px;
+        }
+        .social-networks--dark {
+            margin-left: 0;
+            gap: 10px;
+            
+            .social-network__gray {
+                border-radius: 25px;
+                background-color: #ffffff1a;
+                ;
+                padding: 12px;
+                cursor: pointer;
+                fill: $color-primary-white;
+            }
+            .social-network__gray:hover,
+            .social-network__gray:focus {
+                background-color: $color-accent;
+                cursor: pointer;
+                fill: $color-primary-white;
+            }
+        }
+        .footer__input {
+            width: 358px;
+            background-color: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+            border-radius: 4px;
+            margin-right: 12px;
+            color: rgba(255, 255, 255, 0.6);
+            padding: 16px 15px;
+            font-size: 16px;
+            line-height: 1.25;
+            outline: none;
+        }
+        .footer__input:active {
+            border: none;
+        }
+        .footer__button {
+            display: inline-flex;
+            align-items: center;
+            cursor: pointer;
+            padding: 16px 28px 15px 39px;
+            background-color: $color-accent;
+            color: $color-primary-white;
+            border: none;
+            
+            .footer__send {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 20px;
+                
+                .footer__icon-send {
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+        }
+        .footer__button:hover {
+            background-color: $color-button-hover;
+        }
+    }
+}

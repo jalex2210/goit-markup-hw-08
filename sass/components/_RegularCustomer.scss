@@ -1,0 +1,26 @@
+.regular-customers {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 151px;
+    &__link {
+        background: $color-primary-white;
+        border-radius: 4px;
+        display: flex;
+        width: 170px;
+        height: 81px;
+        border: 1px solid #AFB1B8;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        fill: #AFB1B8;
+
+        .regular-customers__icon {
+            width: 106px;
+        }
+    }
+    &__link:hover,
+    &__link:focus {
+        border: 1px solid $color-accent;
+        fill: $color-accent;
+    }
+}

@@ -1,0 +1,30 @@
+.we-do {
+    display: flex;
+    padding-bottom: 94px;
+    justify-content: space-between;
+
+    &__image-1 {
+        background-image: url(../images/image1.jpeg);
+        flex-basis: calc((100% - 90px)/3)
+    }
+    &__image-2 {
+        background-image: url(../images/image2.jpeg);
+        flex-basis: calc((100% - 90px)/3)
+    }
+    &__image-3 {
+        background-image: url(../images/image3.jpeg);
+        flex-basis: calc((100% - 90px)/3)
+    }
+    &__text {
+        display: flex;
+        border: none;
+        height: 70px;
+        font-size: 14px;
+        line-height: 1.142;
+        color: $color-primary-white;
+        background: rgba(47, 48, 58, 0.8);
+        margin-top: 224px;
+        justify-content: center;
+        align-items: center;
+    }
+}
