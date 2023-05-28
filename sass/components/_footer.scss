@@ -30,28 +30,7 @@
             padding-top: 12px;
             margin-bottom: 20px;
         }
-        .social-networks--dark {
-            margin-left: 0;
-            gap: 10px;
-            
-            .social-network__gray {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border-radius: 25px;
-                background-color: #ffffff1a;
-                width: 44px;
-                height: 44px;
-                cursor: pointer;
-                fill: $color-primary-white;
-            }
-            .social-network__gray:hover,
-            .social-network__gray:focus {
-                background-color: $color-accent;
-                cursor: pointer;
-                fill: $color-primary-white;
-            }
-        }
+        
         .footer__input {
             width: 358px;
             background-color: transparent;
@@ -92,5 +71,43 @@
         .footer__button:hover {
             background-color: $color-button-hover;
         }
+    }
+}
+
+@include screen-480{
+    .footer{
+        text-align: center;
+        padding: 60px 0;
+        &__container{
+            display: block;
+            
+            .footer__contact{
+                width: 450px;
+                .footer__address{
+                    margin-top: 28px;
+                }
+                .logo{
+                    margin-right: unset;
+
+                    .logo__white{
+                        margin-right: unset;
+                    }
+                }
+                
+            }
+            .social-networks--dark{
+                margin-left: auto;
+            }
+            .footer__titles{
+                margin-top: 60px;
+            }
+            .footer__input{
+                width: 450px;
+                margin-bottom: 20px;
+            }
+            .footer__button{
+                width: 200px;
+            }
+        }        
     }
 }

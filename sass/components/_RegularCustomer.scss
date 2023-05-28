@@ -28,7 +28,7 @@
 @include screen-480{
     .regular-customers{
         flex-wrap: wrap;
-        
+        padding-bottom: 60px;
         &__link{
             margin-bottom: 30px;
             width: 210px;
