@@ -25,3 +25,10 @@
         fill: $color-primary-white;
     }
 }
+
+@include screen-480{
+    .social-networks{
+        width: 206px;
+        margin: 16px auto;
+    }
+}

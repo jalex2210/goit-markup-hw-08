@@ -24,3 +24,14 @@
         fill: $color-accent;
     }
 }
+
+@include screen-480{
+    .regular-customers{
+        flex-wrap: wrap;
+        
+        &__link{
+            margin-bottom: 30px;
+            width: 210px;
+        }
+    }
+}
