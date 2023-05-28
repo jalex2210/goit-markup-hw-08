@@ -1,9 +1,9 @@
-@mixin flex($aling: center, $justify: flex-star, $direction: row){
-    display: flex;
-    align-items: $aling;
-    justify-content: $justify;
-    flex-direction: $direction;
-}
+//@mixin flex($aling: center, $justify: flex-star, $direction: row){
+   // display: flex;
+   // align-items: $aling;
+   // justify-content: $justify;
+   // flex-direction: $direction;
+//}
 
 @mixin screen-1200{
     @media screen and (min-width: 1200px) {

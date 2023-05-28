@@ -44,3 +44,9 @@ header {
     padding: 94px 0 50px;
     text-align: center;
 }
+
+@include screen-480{
+    .container{
+        width: 450px;
+    }
+}
