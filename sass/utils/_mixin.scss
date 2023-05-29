@@ -1,10 +1,3 @@
-//@mixin flex($aling: center, $justify: flex-star, $direction: row){
-   // display: flex;
-   // align-items: $aling;
-   // justify-content: $justify;
-   // flex-direction: $direction;
-//}
-
 @mixin screen-1200{
     @media screen and (min-width: 1200px) {
             @content;
@@ -18,7 +11,7 @@
 }
 
 @mixin screen-480{
-    @media screen and (max-width: 480px){
+    @media screen and (max-width: 767px){
         @content;
     }
 }

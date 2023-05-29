@@ -9,20 +9,29 @@
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
     <title>WebStudio</title>
+  
+  
+  
   </head>
 
   <body>
     <!-- ENCABEZADO -->
     <header class="container header">
+      <a class="logo" href="./index.html">Web<span class="logo__black">Studio</span></a>
       
+      <button
+        class="menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg class="header__icon-menu">
+          <use href="./images/SVG/sprite.svg#icon-menu"></use>
+        </svg>
+      </button>
       <nav class="nav">
-        
-        <a class="logo" href="./index.html">Web<span class="logo__black">Studio</span></a>
-
-        
         <a class="nav__link nav__current" href="index.html">Estudio</a>
         <a class="nav__link" href="portfolio.html">Portafolio</a>
-        <a class="nav__link" href="">Сontactos</a>
+        <a class="nav__link" href="contacto.html">Сontactos</a>
       </nav>
       
       <div class="header__contact">
@@ -44,7 +53,7 @@
 
     <!-- MAIN  -->
     <main>
-      <!-- backdrop 
+      <!-- backdrop -->
       <section class="backdrop is-hidden" data-backdrop>
         <div class="modal is-hidden" data-modal>
           <form class="form" name="formulario">
@@ -121,7 +130,7 @@
             </svg>
           </button>
         </div>
-      </section>-->
+      </section>
 
       <!-- TITULO PRINCIPAL -->
       <section class="hero">
@@ -148,7 +157,6 @@
               para así desarrollar una solución a su medida.
             </p>
           </li>
-
           <li class="benefits__column">
             <div class="benefits__icon" type="button">
               <svg class="benefits__icon-svg">
@@ -162,7 +170,6 @@
               los plazos acordados.
             </p>
           </li>
-
           <li class="benefits__column">
             <div class="benefits__icon" type="button">
               <svg class="benefits__icon-svg">
@@ -175,7 +182,6 @@
               aplicación de soluciones.
             </p>
           </li>
-
           <li class="benefits__column">
             <div class="benefits__icon" type="button">
               <svg class="benefits__icon-svg">
@@ -193,10 +199,8 @@
 
       <!-- A QUE NOS DEDICAMOS -->
       <section class="container">
-        
-
+        <h2 class="title-h2 we-do__title">A qué nos dedicamos</h2>
         <ul class="we-do">
-          <h2 class="title-h2">A qué nos dedicamos</h2>
           <li class="we-do__images">
             <img class="we-do__image" src="./images/image1.jpeg" alt="Descktop App" />
             <span class="we-do__text" href="#">
@@ -587,6 +591,42 @@
       </div>
     </footer>
 
+    <!-- MENU MOBILE -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="header__icon-menu">
+          <use href="./images/SVG/sprite.svg#closeMobile"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li><a href="./index.html" class="mobile-menu__link">Estudio</a></li>
+        <li><a href="" class="mobile-menu__link">Portafolio</a></li>
+        <li><a href="" class="mobile-menu__link">Contactos</a></li>
+      </ul>
+
+      <ul class="mobile__contact">
+        <li>
+          <a class="mobile__link-phone" href="tel:525555296000">
+            +52 55 5529 6000
+          </a>
+        </li>
+        <li>
+          <a class="mobile__link-email" href="malito:info@example.com">
+            info@devstudio.com
+          </a>
+        </li>
+      </ul>
+
+      <ul class="mobile__socialMedia">
+        <li><a href="./index.html" class="mobile__socialMedia-link">Instagram</a></li>
+        <li><a href="" class="mobile__socialMedia-link">Twitter</a></li>
+        <li><a href="" class="mobile__socialMedia-link">Facebook</a></li>
+        <li><a href="" class="mobile__socialMedia-link">Linkedin</a></li>
+      </ul>
+    </div>
+
     <script src="./js/modal.js"></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
