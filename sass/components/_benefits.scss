@@ -32,18 +32,20 @@
 
 @include screen-480{
     .benefits{
-        flex-wrap: wrap;
-        justify-content: start;
+        .benefits__column{
+            width: 100%;
+        }
+        display: block;
         .benefits__icon{
             justify-content: center;
-            width: 450px;
+            
         }
         .benefits__title{
             display: flex;
             justify-content: center;
-            width: 450px;
+            width: 100%;
         }.benefits__text {
-            width: 450px;
+            width: 100%;
         }
     }
 }

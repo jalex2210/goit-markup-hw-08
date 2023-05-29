@@ -53,10 +53,6 @@
 }
 @include screen-480{
     .header{
-        display: flex;
         justify-content: space-between;
-        .logo{
-            margin-right: 0;
-        }
     }
 }
