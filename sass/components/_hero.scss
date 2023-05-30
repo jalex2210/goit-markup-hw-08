@@ -2,41 +2,49 @@
     padding: 207px 0 182px;
     background-color: $color-background-black;
     background-image:
-        linear-gradient(rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url(../images/background-image.jpeg);
+    linear-gradient(rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+    url(../images/background-image.jpeg);
     background-size: cover;
-    .hero__title {
-        text-align: center;
-        width: 696px;
-        .hero__h1 {
-            color: $color-primary-white;
-            font-size: 44px;
-            font-weight: 900;
-            letter-spacing: 0.06em;
-            line-height: 1.4;
-            text-transform: uppercase;
-        }
-        .hero__button {
-            color: $color-primary-white;
-            background-color: $color-accent;
-            border: 5px solid $color-accent;
-            border-radius: 5px;
-            font-size: 16px;
-            font-weight: 700;
-            line-height: 1.9;
-            cursor: pointer;
-            margin-top: 30px;
-        }
-        .hero__button:hover,
-        .hero__button:focus {
-            background-color: $color-button-hover;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        .hero__title {
+            text-align: center;
+            width: 696px;
+            .hero__h1 {
+                color: $color-primary-white;
+                font-size: 44px;
+                font-weight: 900;
+                letter-spacing: 0.06em;
+                line-height: 1.4;
+                text-transform: uppercase;
+            }
+            .hero__button {
+                color: $color-primary-white;
+                background-color: $color-accent;
+                border: 5px solid $color-accent;
+                border-radius: 5px;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 1.9;
+                cursor: pointer;
+                margin-top: 30px;
+            }
+            .hero__button:hover,
+            .hero__button:focus {
+                background-color: $color-button-hover;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            }
         }
     }
-}
+    
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        .hero {
+            background-image: url(/images/background-image@2x.jpeg);
+        }
+    }
 
-@include screen-480{
+    @include screen-480{
     .hero {
         .hero__title {
             width: 80%;
@@ -46,3 +54,4 @@
         }
     }
 }
+
