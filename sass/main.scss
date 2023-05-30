@@ -51,3 +51,11 @@ header {
         padding: 24px 15px;
     }
 }
+
+@include screen-768{
+    .container{
+        width: 100%;
+        padding: 24px 15px;
+    }
+}
+

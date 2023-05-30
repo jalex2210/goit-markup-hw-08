@@ -49,3 +49,12 @@
         }
     }
 }
+
+@include screen-768{
+    .benefits{
+        flex-wrap: wrap;
+        @media (min-width: 920px){
+            gap: 180px;
+        }
+    }
+}

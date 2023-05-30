@@ -14,3 +14,10 @@
 .logo__white{
   color: $color-primary-white;
 }
+
+@include screen-768{
+  .logo__white,
+  .logo {
+      margin-right: 0;
+    }
+}

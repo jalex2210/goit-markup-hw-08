@@ -23,7 +23,6 @@
         width: 370px;
     }
 }
-
 @include screen-480{
     .we-do {
        //display: block;
@@ -34,10 +33,33 @@
             justify-content: center;
             margin-bottom: 30px;
             .we-do__image{
-                width: 450px;
+                width: 100vw;
             }
             .we-do__text{
-                width:450px;
+                width:100vw;
+                margin-top: 320px;
+            }
+        }
+    }
+    .we-do__title{
+        display: none;
+    }
+}
+
+@include screen-768 {
+    .we-do {
+       flex-wrap: wrap;
+       justify-content: center;
+       display: none;
+        
+        &__images {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+            .we-do__image{
+                
+            }
+            .we-do__text{
                 margin-top: 320px;
             }
         }

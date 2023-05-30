@@ -111,3 +111,21 @@
         }        
     }
 }
+
+@include screen-768 {
+    .footer {
+        text-align: center;
+        &__container{
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 60px;
+            @media (min-width: 1109px) and (max-width: 1200px){
+                gap: 100px;
+            }   
+                .footer__input {
+                    margin-bottom: 20px;
+                    display: block;
+            }
+        }
+    }
+}

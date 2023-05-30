@@ -40,6 +40,12 @@
     
 }
 
+@include screen-480{
+    .header{
+        justify-content: space-between;
+    }
+}
+
 @include screen-1200{
     .menu-toggle{
         display: none;
@@ -50,9 +56,15 @@
     .menu-toggle {
         display: none;
     }
-}
-@include screen-480{
+
     .header{
+        width: 100vh;
         justify-content: space-between;
+        .nav{
+            margin-right: 0;
+        }
+        .header__contact{
+            display:block;
+        }
     }
 }

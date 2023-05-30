@@ -38,3 +38,19 @@
         }
     }
 }
+
+@include screen-768 {
+    .regular-customers {
+        flex-wrap: wrap;
+        padding-bottom: 60px;
+
+        @media (min-width: 1114px) {
+            gap: 100px;
+        }
+
+        &__link {
+            margin-bottom: 30px;
+            width: 226px;
+        }
+    }
+}
