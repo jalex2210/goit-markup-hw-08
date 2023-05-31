@@ -34,17 +34,17 @@
                 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
             }
         }
-    }
+}
     
-    @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-        .hero {
-            background-image:url(/images/background-image@2x.jpeg);
-        }
-    }
+// @media screen and (min-device-pixel-ratio: 2),
+// screen and (min-resolution: 192dpi),
+// screen and (min-resolution: 2dppx) {
+//     .hero {
+//         background-image:url(/images/background-image@2x.jpeg);
+//     }
+// }
 
-    @include screen-480{
+@include screen-480{
     .hero {
         background-image: url(/images/Background-Header480.jpeg);
         .hero__title {
