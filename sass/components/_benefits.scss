@@ -51,11 +51,11 @@
 }
 
 @include screen-768{
-.benefits{
-    flex-wrap: wrap;
-    gap: 30px;
-}
-    &__column{
-        width: 354px;
+    .benefits{
+        flex-wrap: wrap;
+        gap: 30px;
+        &__column{
+            width: 354px;
+        }
     }
 }

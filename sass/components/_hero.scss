@@ -4,7 +4,7 @@
     background-image:
     linear-gradient(rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4)),
-    url(../images/background-image.jpeg);
+    url(/images/background-image.jpeg);
     background-size: cover;
         .hero__title {
             text-align: center;
@@ -46,7 +46,10 @@
 
 @include screen-480{
     .hero {
-        background-image: url(/images/Background-Header480.jpeg);
+        background-image:
+        linear-gradient(rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+        url(/images/Background-Header480.jpeg);     
         .hero__title {
             width: 80%;
             .hero__h1 {
