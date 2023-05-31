@@ -53,8 +53,12 @@
 @include screen-768{
     .benefits{
         flex-wrap: wrap;
+        gap: 30px;
         @media (min-width: 920px){
             gap: 180px;
+        }
+        &__column{
+            width: 354px;
         }
     }
 }
