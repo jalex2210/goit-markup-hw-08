@@ -15,18 +15,23 @@
   <body class="body-portfolio">
     <!-- ENCABEZADO -->
    <header class="container header">
-      <!-- nav -->
+      <a class="logo" href="./index.html">Web<span class="logo__black">Studio</span></a>
+      
+      <button
+        class="menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg class="header__icon-menu">
+          <use href="./images/SVG/sprite.svg#icon-menu"></use>
+        </svg>
+      </button>
       <nav class="nav">
-        <!-- LOGO -->
-            <a class="logo" href="./index.html"> Web<span class="logo__black">Studio</span></a>
-
-
-        <!-- MENU LISTA HEADER -->
-        <a class="nav__link" href="index.html">Estudio</a>
+        <a class="nav__link " href="index.html">Estudio</a>
         <a class="nav__link nav__current" href="portfolio.html">Portafolio</a>
         <a class="nav__link" href="">Сontactos</a>
       </nav>
-      <!-- contacto -->
+      
       <div class="header__contact">
         <a class="header__link-contact" href="malito:info@example.com">
           <svg class="header__icon-folder">
@@ -84,8 +89,8 @@
             <a href="#">
               <div class="portfolio__card-description">
                 <picture>
-                  <source srcset="./images/project1.jpeg 1x, ../images/project1@2x.jpeg 2x">
-                  <img src="./images/project1.jpeg" alt="project Tecnoduck" />
+                  <source  srcset="./images/project1.jpeg 1x, ../images/project1@2x.jpeg 2x">
+                  <img class="picture" src="./images/project1.jpeg" alt="project Tecnoduck" />
                 </picture>
                 <p class="portfolio__card-overlay">
                   Tecnoduck es una plataforma de distribución de coronavirus de
@@ -104,7 +109,7 @@
               <div class="portfolio__card-description">
                 <picture>
                   <source srcset="./images/project2.jpeg 1x, ../images/project2@2x.jpeg 2x">
-                  <img src="./images/project2.jpeg" alt="project poster" />
+                  <img class="picture" src="./images/project2.jpeg" alt="project poster" />
                 </picture>
                 <p class="portfolio__card-overlay">
                   Tecnoduck es una plataforma de distribución de coronavirus de
@@ -123,9 +128,9 @@
          <li class="portfolio__card">
             <a href="#">
               <div class="portfolio__card-description">
-                <picture>
+                <picture >
                   <source srcset="./images/project3.jpeg 1x, ../images/project3@2x.jpeg 2x">
-                  <img src="./images/project3.jpeg" alt="Restaurant" />
+                  <img class="picture" class="picture" src="./images/project3.jpeg" alt="Restaurant" />
                 </picture>
                 <p class="portfolio__card-overlay">
                   Tecnoduck es una plataforma de distribución de coronavirus de
@@ -144,7 +149,7 @@
               <div class="portfolio__card-description">
                 <picture>
                   <source srcset="./images/project4.jpeg 1x, ../images/project4@2x.jpeg 2x">
-                  <img src="./images/project4.jpeg" alt="Project Prime" />
+                  <img class="picture" src="./images/project4.jpeg" alt="Project Prime" />
                 </picture>
                  <p class="portfolio__card-overlay">
                   Tecnoduck es una plataforma de distribución de coronavirus de
@@ -163,7 +168,7 @@
               <div class="portfolio__card-description">
                 <picture>
                   <source srcset="./images/project5.jpeg 1x, ../images/project5@2x.jpeg 2x">
-                  <img src="./images/project5.jpeg" alt="project box" />
+                  <img class="picture" src="./images/project5.jpeg" alt="project box" />
                 </picture>
                 <p class="portfolio__card-overlay">
                   Tecnoduck es una plataforma de distribución de coronavirus de
@@ -182,7 +187,7 @@
               <div class="portfolio__card-description">
                 <picture>
                   <source srcset="./images/project6.jpeg 1x, ../images/project6@2x.jpeg 2x">
-                  <img src="./images/project6.jpeg" alt="whitout limit" />
+                  <img class="picture" src="./images/project6.jpeg" alt="whitout limit" />
                 </picture>
                  <p class="portfolio__card-overlay">
                   Tecnoduck es una plataforma de distribución de coronavirus de
@@ -201,7 +206,7 @@
               <div class="portfolio__card-description">
                 <picture>
                   <source srcset="./images/project7.jpeg 1x, ../images/project7@2x.jpeg 2x">
-                <img src="./images/project7.jpeg" alt="limited edition" />
+                <img class="picture" src="./images/project7.jpeg" alt="limited edition" />
                 </picture>
                  <p class="portfolio__card-overlay">
                   Tecnoduck es una plataforma de distribución de coronavirus de
@@ -220,7 +225,7 @@
               <div class="portfolio__card-description">
                 <picture>
                   <source srcset="./images/project8.jpeg 1x, ../images/project8@2x.jpeg 2x">
-                 <img src="./images/project8.jpeg" alt="Project LAB" />
+                 <img class="picture" src="./images/project8.jpeg" alt="Project LAB" />
                 </picture>
                <p class="portfolio__card-overlay">
                   Tecnoduck es una plataforma de distribución de coronavirus de
@@ -239,7 +244,7 @@
               <div class="portfolio__card-description">
                 <picture>
                   <source srcset="./images/project9.jpeg 1x, ../images/project9@2x.jpeg 2x">
-                  <img src="./images/project9.jpeg" alt="growing business" />
+                  <img class="picture" src="./images/project9.jpeg" alt="growing business" />
                 </picture>
                  <p class="portfolio__card-overlay">
                   Tecnoduck es una plataforma de distribución de coronavirus de
@@ -358,5 +363,48 @@
         </aside>
       </div>
     </footer>
+
+     <!-- MENU MOBILE -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="header__icon-menu">
+          <use href="./images/SVG/sprite.svg#closeMobile"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li><a href="./index.html" class="mobile-menu__link">Estudio</a></li>
+        <li><a href="portfolio.html" class="mobile-menu__link">Portafolio</a></li>
+        <li><a href="" class="mobile-menu__link">Contactos</a></li>
+      </ul>
+
+      <ul class="mobile__contact">
+        <li>
+          <a class="mobile__link-phone" href="tel:525555296000">
+            +52 55 5529 6000
+          </a>
+        </li>
+        <li>
+          <a class="mobile__link-email" href="malito:info@example.com">
+            info@devstudio.com
+          </a>
+        </li>
+      </ul>
+
+      <ul class="mobile__socialMedia">
+        <li><a href="./index.html" class="mobile__socialMedia-link">Instagram</a></li>
+        <li><a href="" class="mobile__socialMedia-link">Twitter</a></li>
+        <li><a href="" class="mobile__socialMedia-link">Facebook</a></li>
+        <li><a href="" class="mobile__socialMedia-link">Linkedin</a></li>
+      </ul>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

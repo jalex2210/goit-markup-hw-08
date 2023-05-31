@@ -91,3 +91,29 @@
         }
     }
 }
+
+@include screen-480{
+    .portfolio{
+        &__lists{
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            padding-top: 35px;
+            margin-right: 15px;
+        }
+
+        &__cards{
+        width: 450px;
+            .portfolio__card{
+                width: 450px;
+                
+                .portfolio__card-description{
+                    width: 450px;
+                    .picture{
+                        width: 100vw;
+                    }
+                }
+            }
+            
+        }
+    }
+}
